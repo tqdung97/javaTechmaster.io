@@ -15,11 +15,26 @@ public class BaiTapBuoi2 {
         Random rd = new Random();
         randomNumber = rd.nextInt(100)+1;
         System.out.println("RandomNumber: " + randomNumber );
+        // toan tử ngôi ba ngôi
 
         String soSanh1 = ( numBer > randomNumber) ? "numBer > randomNumber" : "numBer < randomNumber"  ;
         String soSanh2 = (numBer == randomNumber) ? " numBer = randomNumber" :"numBer != randomNumber";
         System.out.println(soSanh1);
         System.out.println(soSanh2);
+        // so sánh c2
+        System.out.println( numBer + " > " + randomNumber + " : " + ( numBer > randomNumber));
+        System.out.println( numBer + " < " + randomNumber + " : " + ( numBer < randomNumber));
+        System.out.println( numBer + " >= " + randomNumber + " : " + ( numBer >= randomNumber));
+        System.out.println( numBer + " <= " + randomNumber + " : " + ( numBer <= randomNumber));
+        System.out.println( numBer + " == " + randomNumber + " : " + ( numBer == randomNumber));
+        System.out.println( numBer + " != " + randomNumber + " : " + ( numBer != randomNumber));
+        System.out.println( " Ca 2 so la so chan :" + (numBer%2==0 && randomNumber%2==0));
+        System.out.println( "Co it nhat 1 so chan :" + ( numBer%2==0 ||randomNumber%2==0));
+        System.out.println( " Ca 2 so la so le :" + ( numBer%2>0 && randomNumber%2>0));
+
+
+
+    
 
     }
 
