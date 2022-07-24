@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -19,8 +20,8 @@ public class BaiTapBuoi2 {
 
         String soSanh1 = ( numBer > randomNumber) ? "numBer > randomNumber" : "numBer < randomNumber"  ;
         String soSanh2 = (numBer == randomNumber) ? " numBer = randomNumber" :"numBer != randomNumber";
-        System.out.println(soSanh1);
-        System.out.println(soSanh2);
+        System.out.println( "so sanh 1:" + soSanh1);
+        System.out.println("so sanh 2: "+soSanh2);
         // so sánh c2
         System.out.println( numBer + " > " + randomNumber + " : " + ( numBer > randomNumber));
         System.out.println( numBer + " < " + randomNumber + " : " + ( numBer < randomNumber));
@@ -31,6 +32,7 @@ public class BaiTapBuoi2 {
         System.out.println( " Ca 2 so la so chan :" + (numBer%2==0 && randomNumber%2==0));
         System.out.println( "Co it nhat 1 so chan :" + ( numBer%2==0 ||randomNumber%2==0));
         System.out.println( " Ca 2 so la so le :" + ( numBer%2>0 && randomNumber%2>0));
+        System.out.println("------------");
 
 
 

@@ -13,6 +13,7 @@ public class BaiTapBuoi1 {
 
         int iInt = ++i;
         System.out.println("++i = " + iInt);
+
         int nInt = iInt % 5;
         System.out.println("So du :" + nInt);
 
@@ -45,30 +46,34 @@ public class BaiTapBuoi1 {
         if(x>0){
             check = true;
         }else check = false;
-        
-
         System.out.println("Dk1: " + check) ;
+
         if(x % y == 0){
             check = true;
         }else check = false;
         System.out.println("Dk2: " + check );
+
         if( 2 <= x && x <=15){
             check = true;
         }else check =false;
         System.out.println("Dk3: " + check);
+
         if ( x - y < 5){
             check = true;
         }else check = false;
         System.out.println("Dk4: " + check);
-        if ( x > 30 && x < 10){
+
+        if ( x > 30 || x < 10){
             check = true;
         }else check = false;
         System.out.println("Dk5: " + check);
+
         if ( x / 1000 >= 1){
             check = true;
         }else check = false;
         System.out.println("Dk6: " + check);
-        if ( x / 100000 > 1  && x / 100000 < 9){
+
+        if ( x >=100000  && x <= 999999 ){
             check = true;
         }else check = false;
         System.out.println("Dk7:" + check);
