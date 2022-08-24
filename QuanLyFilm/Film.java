@@ -1,4 +1,5 @@
 package QuanLyFilm;
+
 /*
  * Viết chương trình quản lý phim gồm các thông tin
 Tạo class Film gồm các thuộc tính:
@@ -41,7 +42,6 @@ public class Film {
     private TheLoai theLoai;
     private String tacGia;
 
-    
     public Film(String iD, String tenFilm, double ranking, TheLoai theLoai, String tacGia) {
         ID = iD;
         this.tenFilm = tenFilm;
@@ -52,41 +52,48 @@ public class Film {
 
     }
 
-
     public String getID() {
         return ID;
     }
+
     public void setID(String iD) {
         this.ID = iD;
     }
+
     public String getTenFilm() {
         return tenFilm;
     }
+
     public void setTenFilm(String tenFilm) {
         this.tenFilm = tenFilm;
     }
+
     public double getRanking() {
         return Ranking;
     }
+
     public void setRanking(double ranking) {
-       this.Ranking = ranking;
+        this.Ranking = ranking;
     }
+
     public TheLoai getTheLoai() {
         return theLoai;
     }
+
     public void setTheLoai(TheLoai theLoai) {
         this.theLoai = theLoai;
     }
+
     public String getTacGia() {
         return tacGia;
     }
+
     public void setTacGia(String tacGia) {
         this.tacGia = tacGia;
-    }  
-    public  boolean hasKeyword(String idInput) {
+    }
+
+    public boolean hasKeyword(String idInput) {
         boolean result = this.tenFilm.contains(idInput);
         return result;
     }
 }
-
-

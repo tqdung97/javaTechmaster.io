@@ -102,7 +102,6 @@ public class ShowInfo {
                         + Series[i].getRanking());
             }
         }
-
     }
 
     public static void main(String[] args) {
