@@ -217,18 +217,5 @@ public class userService implements CRUDUsers {
         menu();
     }
 
-    @Override
-    public void display() {
-    }
 
-
-    @Override
-    public void updateUser() {
-
-    }
-
-    @Override
-    public void delUser() {
-
-    }
 }
