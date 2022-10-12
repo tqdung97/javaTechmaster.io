@@ -70,6 +70,46 @@ public class LabCTDL {
         }
         return arr;
     }
+//    796 trong leadcode
+    public  boolean rotateString(String s, String goal) {
+        if(s.length()!=goal.length()) return false;
+
+        int firstCharIndexInGoal = -1;
+
+        for(int i=0;i<goal.length();i++){
+            if(s.charAt(0)==goal.charAt(i)){
+                firstCharIndexInGoal = i;
+                char ch[] = goal.toCharArray();
+                if(isFeasible(ch,s,goal,firstCharIndexInGoal)){
+                    return true;
+                }
+            }
+        }
+
+        if(firstCharIndexInGoal==-1) return false;
+
+        return false;
+    }
+
+    public boolean isFeasible(char ch[],String s,String goal,int firstCharIndexInGoal){
+        reverse(ch,0,firstCharIndexInGoal-1);
+        reverse(ch,firstCharIndexInGoal,goal.length()-1);
+        reverse(ch,0,goal.length()-1);
+
+        String newString = new String(ch);
+        return s.equals(newString);
+    }
+
+
+    public void reverse(char ch[],int i,int j){
+        while(i<j){
+            char c = ch[i];
+            ch[i] = ch[j];
+            ch[j] = c;
+            i++;
+            j--;
+        }
+    }
     public static void main(String[] args) {
         int[] arr = { 1,5,8,7,6,4};
 //        System.out.println(Arrays.toString(BubbleSort(arr)));
