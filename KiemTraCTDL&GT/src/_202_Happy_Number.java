@@ -26,8 +26,12 @@ public class _202_Happy_Number {
                 n = n / 10;
             }
 
-            if(k == 1) return true;
-            if(set.contains(k)) return false;
+            if(k == 1){
+                return true;
+            }
+            if(set.contains(k)){
+                return false;
+            }
             set.add(k);
             n = k;
         }
@@ -35,6 +39,6 @@ public class _202_Happy_Number {
     }
 
     public static void main(String[] args) {
-        System.out.println(isHappy(1));
+        System.out.println(isHappy(19));
     }
 }

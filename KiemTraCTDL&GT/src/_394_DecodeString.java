@@ -1,7 +1,9 @@
 package src;
 
+import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.List;
 
 public class _394_DecodeString {
 
@@ -18,7 +20,10 @@ public class _394_DecodeString {
         while (!queue.isEmpty()) {
             char c= queue.poll();
             if (Character.isDigit(c)) {
-                num = num * 10 + c - '0';
+                System.out.println(num);
+                System.out.println(c);
+                num = num * 10 + c -;
+                System.out.println(num);
             } else if (c == '[') {
                 String sub = helper(queue);
                 for (int i = 0; i < num; i++) sb.append(sub);
@@ -34,7 +39,7 @@ public class _394_DecodeString {
     }
 
     public static void main(String[] args) {
-        String s ="3[a]2[bc]";
+        String s ="3[a2[c]]";
         _394_DecodeString a = new _394_DecodeString();
         System.out.println(a.decodeString(s));
     }
