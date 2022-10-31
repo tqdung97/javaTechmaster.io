@@ -18,12 +18,6 @@ public class _141 {
         return false;
     }
 
-    public static void main(String[] args) {
-        ListNode head = new ListNode(3,2,0,-4);
-//        ListNode head2= new ListNode(2);
-
-        System.out.println(hasCycle(head));
-    }
 
 
 }

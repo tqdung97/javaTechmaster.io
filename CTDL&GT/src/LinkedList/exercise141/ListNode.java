@@ -10,6 +10,4 @@ public class ListNode {
           next = null;
      }
 
-    public ListNode(int x, int i, int i1, int i2) {
-    }
 }
