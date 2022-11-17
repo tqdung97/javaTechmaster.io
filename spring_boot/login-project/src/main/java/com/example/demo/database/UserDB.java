@@ -1,4 +1,4 @@
-package database;
+package com.example.demo.database;
 
 import com.example.demo.model.User;
 
